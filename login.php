@@ -15,10 +15,14 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -43,10 +47,14 @@
                                     </div>
                                     <form action="process/login.php" method="POST" class="user">
                                         <div class="form-group">
-                                            <input name="username" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Username">
+                                            <input name="username" class="form-control form-control-user"
+                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Username">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <input type="password" name="password"
+                                                class="form-control form-control-user" id="exampleInputPassword"
+                                                placeholder="Password">
                                         </div>
 
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -57,9 +65,9 @@
                                     <div class="text-center mt-2">
                                         <!-- check if pesan parameter exist -->
                                         <?php if (isset($_GET['pesan'])) { ?>
-                                            <div class="alert alert-danger" role="alert">
-                                                <?php echo $_GET['pesan']; ?>
-                                            </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            <?php echo $_GET['pesan']; ?>
+                                        </div>
                                         <?php } ?>
                                     </div>
                                 </div>

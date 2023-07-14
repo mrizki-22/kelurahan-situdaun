@@ -11,15 +11,13 @@
                 <p class="fw-normal fs-6">Kec. Tenjolaya Kab. Bogor</p>
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ms-auto fw-semibold">
                 <li class="nav-item me-4 dropdown">
-                    <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown"
-                        style="cursor: pointer;">Profil Desa</a>
+                    <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer;">Profil Desa</a>
                     <ul class="dropdown-menu dropdown-menu">
                         <li><a class="dropdown-item" href="profil-wilayah-desa.php">Profil Wilayah Desa</a></li>
                         <li><a class="dropdown-item" href="sejarah-desa.php">Sejarah Desa</a></li>

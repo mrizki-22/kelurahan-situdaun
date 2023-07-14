@@ -7,7 +7,7 @@
     <title>Sejarah Desa</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

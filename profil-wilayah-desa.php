@@ -7,7 +7,7 @@
     <title>Profil Wilayah Desa</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -18,8 +18,7 @@
     <?php
     include 'navbar.php'
     ?>
-    <div class="container-fluid d-flex justify-content-center align-items-center"
-        style="height: 20em;background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/situdaun2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 20em;background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/situdaun2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div>
             <h1 class="display-5 fs-2 fw-semibold text-center text-white">Profil Wilayah Desa Situdaun</h1>
         </div>
@@ -49,8 +48,7 @@
                     </div>
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
                         <!-- import svg from img -->
-                        <img src="img/undraw_connected_world_wuay.svg" alt="letak-geografis" class="img-fluid"
-                            width="300">
+                        <img src="img/undraw_connected_world_wuay.svg" alt="letak-geografis" class="img-fluid" width="300">
                     </div>
                 </div>
 
@@ -107,7 +105,7 @@
     ?>
 
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 </body>
 

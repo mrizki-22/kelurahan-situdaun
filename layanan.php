@@ -15,6 +15,7 @@ include 'process/read-surat.php';
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <style>
         input::-webkit-outer-spin-button,
@@ -45,7 +46,7 @@ include 'process/read-surat.php';
         </div>
     </div>
     <div class="container-fluid ">
-        <!-- jumbotron -->
+
 
 
         <div>
