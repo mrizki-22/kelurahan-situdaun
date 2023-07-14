@@ -20,7 +20,7 @@ if (!isset($_GET['id'])) {
 
 <div>
     <div class="mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tambah Data Penduduk</h1>
+        <h1 class="h3 mb-0 text-gray-800">Edit Data Penduduk</h1>
     </div>
 
 

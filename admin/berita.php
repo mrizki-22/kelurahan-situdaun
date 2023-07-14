@@ -17,7 +17,8 @@ include '../process/read-berita.php';
                 <h6 class="m-0 font-weight-bold text-primary">Berita diupload</h6>
             </div>
             <div class="d-flex justify-content-between" style="padding: 0 20px;">
-                <form action="" class="d-flex justify-content-between col-4 p-0">
+                <form method="get" class="d-flex justify-content-between col-4 p-0">
+                    <input type="hidden" name="p" value="berita">
                     <input class="form-control" type="text" name="cari" placeholder="Cari Berita">
                     <button type="submit" class="btn btn-primary ml-1">
                         <i class="fas fa-fw fa-search"></i>
@@ -45,18 +46,17 @@ include '../process/read-berita.php';
                         <tbody>
                             <!-- loop -->
                             <?php while ($data = mysqli_fetch_assoc($result)) { ?>
-                            <tr>
-                                <td><?php echo $data['judul']; ?></td>
-                                <td><?php echo $data['teks_pembuka']; ?></td>
-                                <td><?php echo $data['created_at']; ?></td>
-                                <td>
+                                <tr>
+                                    <td><?php echo $data['judul']; ?></td>
+                                    <td><?php echo $data['teks_pembuka']; ?></td>
+                                    <td><?php echo $data['created_at']; ?></td>
+                                    <td>
 
-                                    <button id="delete-btn" data-toggle="modal" data-target="#exampleModal"
-                                        class="btn btn-danger" data-id="<?= $data['id']; ?>">
-                                        <i class="fas fa-fw fa-trash"></i>
-                                    </button>
-                                </td>
-                            </tr>
+                                        <button id="delete-btn" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger" data-id="<?= $data['id']; ?>">
+                                            <i class="fas fa-fw fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
                             <?php }; ?>
 
 
@@ -93,13 +93,13 @@ include '../process/read-berita.php';
 </div>
 
 <script>
-const deleteBtn = document.querySelectorAll('#delete-btn');
-deleteBtn.forEach(btn => {
-    btn.addEventListener('click', function() {
-        //store id to input hidden
-        const id = this.dataset.id;
-        const input = document.querySelector('input[name="id"]');
-        input.value = id;
+    const deleteBtn = document.querySelectorAll('#delete-btn');
+    deleteBtn.forEach(btn => {
+        btn.addEventListener('click', function() {
+            //store id to input hidden
+            const id = this.dataset.id;
+            const input = document.querySelector('input[name="id"]');
+            input.value = id;
+        })
     })
-})
 </script>

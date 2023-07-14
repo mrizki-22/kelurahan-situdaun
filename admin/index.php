@@ -47,6 +47,8 @@ if (isset($_GET['p'])) {
     <!-- Theme included stylesheets -->
     <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
 
 
 </head>

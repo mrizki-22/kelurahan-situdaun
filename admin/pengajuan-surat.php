@@ -17,7 +17,8 @@ include '../process/read-pengajuan-surat.php';
                 <h6 class="m-0 font-weight-bold text-primary">Tabel pengajuan surat</h6>
             </div>
             <div class="d-flex justify-content-between" style="padding: 0 20px;">
-                <form action="" class="d-flex justify-content-between col-4 p-0">
+                <form method="get" class="d-flex justify-content-between col-4 p-0">
+                    <input type="hidden" name="p" value="pengajuan-surat">
                     <input class="form-control" type="text" name="cari" placeholder="Cari Data Pengajuan">
                     <button type="submit" class="btn btn-primary ml-1">
                         <i class="fas fa-fw fa-search"></i>
