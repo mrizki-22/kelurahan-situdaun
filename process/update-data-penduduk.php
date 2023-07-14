@@ -5,9 +5,6 @@ include 'database.php';
 $id = $_POST['id_penduduk'];
 $nik = $_POST['nik'];
 
-echo $id . '<br>';
-echo $nik;
-
 // Check if NIK already exists
 $sql = "SELECT * FROM penduduk WHERE nik='$nik' AND id_penduduk != '$id'";
 $result = mysqli_query($conn, $sql);
