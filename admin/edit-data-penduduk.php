@@ -28,19 +28,23 @@ if (!isset($_GET['id'])) {
         <div class="col-md-6 row ">
             <div class="col-12 mb-2">
                 <label for="nik">NIK: </label>
-                <input id="nik" type="text" class="form-control" name="nik" placeholder="Nomor Induk Kependudukan" value="<?= $penduduk['nik']; ?>" required>
+                <input id="nik" type="text" class="form-control" name="nik" placeholder="Nomor Induk Kependudukan"
+                    value="<?= $penduduk['nik']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="nama">Nama Lengkap: </label>
-                <input id="nama" type="text" class="form-control" name="nama" placeholder="Nama lengkap" value="<?= $penduduk['nama']; ?>" required>
+                <input id="nama" type="text" class="form-control" name="nama" placeholder="Nama lengkap"
+                    value="<?= $penduduk['nama']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="tempat_lahir">Tempat / Kota Lahir: </label>
-                <input id="tempat_lahir" type="text" class="form-control" name="tempat_lahir" placeholder="Nama kota lahir" value="<?= $penduduk['tempat_lahir']; ?>" required>
+                <input id="tempat_lahir" type="text" class="form-control" name="tempat_lahir"
+                    placeholder="Nama kota lahir" value="<?= $penduduk['tempat_lahir']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="tanggal_lahir">Tanggal Lahir: </label>
-                <input id="tanggal_lahir" type="date" class="form-control" name="tanggal_lahir" value="<?= $penduduk['tanggal_lahir']; ?>" required>
+                <input id="tanggal_lahir" type="date" class="form-control" name="tanggal_lahir"
+                    value="<?= $penduduk['tanggal_lahir']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="jenis_kelamin">Jenis Kelamin: </label>
@@ -56,15 +60,18 @@ if (!isset($_GET['id'])) {
         <div class="col-md-6 row">
             <div class="col-12 mb-2">
                 <label for="alamat">Alamat: </label>
-                <input id="alamat" type="text" class="form-control" name="alamat" placeholder="Alamat lengkap" value="<?= $penduduk['alamat']; ?>" required>
+                <input id="alamat" type="text" class="form-control" name="alamat" placeholder="Alamat lengkap"
+                    value="<?= $penduduk['alamat']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="agama">Agama: </label>
                 <select class="custom-select" name="agama" id="agama" required>
                     <option value="Islam" <?php if ($penduduk['agama'] == 'Islam') echo 'selected'; ?>>Islam</option>
-                    <option value="Kristen Protestan" <?php if ($penduduk['agama'] == 'Kristen Protestan') echo 'selected'; ?>>Kristen Protestan
+                    <option value="Kristen Protestan"
+                        <?php if ($penduduk['agama'] == 'Kristen Protestan') echo 'selected'; ?>>Kristen Protestan
                     </option>
-                    <option value="Kristen Katolik" <?php if ($penduduk['agama'] == 'Kristen Katolik') echo 'selected'; ?>>Kristen Katolik</option>
+                    <option value="Kristen Katolik"
+                        <?php if ($penduduk['agama'] == 'Kristen Katolik') echo 'selected'; ?>>Kristen Katolik</option>
                     <option value="Hindu" <?php if ($penduduk['agama'] == 'Hindu') echo 'selected'; ?>>Hindu</option>
                     <option value="Buddha" <?php if ($penduduk['agama'] == 'Buddha') echo 'selected'; ?>>Buddha</option>
                     <option value="Khonghucu" <?php if ($penduduk['agama'] == 'Khonghucu') echo 'selected'; ?>>Konghucu
@@ -75,20 +82,24 @@ if (!isset($_GET['id'])) {
             <div class="col-12 mb-2">
                 <label for="status_perkawinan">Status Perkawinan: </label>
                 <select class="custom-select" name="status_perkawinan" id="status_perkawinan" required>
-                    <option value="belum kawin" <?php if ($penduduk['status_perkawinan'] == 'belum kawin') echo 'selected'; ?>>Belum kawin
+                    <option value="belum kawin"
+                        <?php if ($penduduk['status_perkawinan'] == 'belum kawin') echo 'selected'; ?>>Belum kawin
                     </option>
                     <option value="kawin" <?php if ($penduduk['status_perkawinan'] == 'kawin') echo 'selected'; ?>>
                         Kawin</option>
-                    <option value="cerai hidup" <?php if ($penduduk['status_perkawinan'] == 'cerai hidup') echo 'selected'; ?>>Cerai hidup
+                    <option value="cerai hidup"
+                        <?php if ($penduduk['status_perkawinan'] == 'cerai hidup') echo 'selected'; ?>>Cerai hidup
                     </option>
-                    <option value="cerai mati" <?php if ($penduduk['status_perkawinan'] == 'cerai mati') echo 'selected'; ?>>Cerai mati
+                    <option value="cerai mati"
+                        <?php if ($penduduk['status_perkawinan'] == 'cerai mati') echo 'selected'; ?>>Cerai mati
                     </option>
                 </select>
 
             </div>
             <div class="col-12 mb-2">
                 <label for="pekerjaan">Pekerjaan: </label>
-                <input id="pekerjaan" type="text" class="form-control" name="pekerjaan" placeholder="Jenis pekerjaan" value="<?= $penduduk['pekerjaan']; ?>" required>
+                <input id="pekerjaan" type="text" class="form-control" name="pekerjaan" placeholder="Jenis pekerjaan"
+                    value="<?= $penduduk['pekerjaan']; ?>" required>
             </div>
             <div class="col-12 mb-2">
                 <label for="kewarganegaraan">Kewarganegaraan: </label>
@@ -103,7 +114,7 @@ if (!isset($_GET['id'])) {
         </div>
 
 
-        <input type="hidden" name="id" value="<?= $penduduk['id']; ?>">
+        <input type="hidden" name="id_penduduk" value="<?= $penduduk['id_penduduk']; ?>">
         <div class="d-flex ml-auto mt-3 mr-5">
             <button type="submit" class="btn btn-primary btn-block" name="tambah-data-penduduk">Simpan</button>
             <a class="btn btn-outline-danger ml-2" href="index.php?p=data-penduduk">Batal</a>
